@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Tie
 %define		pnam	Cache
@@ -6,7 +10,8 @@ Summary(pl):	Tie::Cache - cache typu LRU w pamiêci
 Name:		perl-Tie-Cache
 Version:	0.17
 Release:	6
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	93f1bb8006815ade24fde309925cebe0
@@ -50,10 +55,13 @@ Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
