@@ -20,7 +20,7 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Tie::Cache
 Summary(zh_CN):	Tie::Cache Perl Ä£¿é
 Name:		perl-Tie-Cache
 Version:	0.17
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -81,6 +81,17 @@ Tie::Cache Perlmodul.
 %description -l zh_CN
 Tie::Cache Perl Ä£¿é
 
+%package bench
+Summary:	Berchmark comparing Tie::Cache and Tie::Cache::LRU Perl modules
+Summary(pl):	Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU
+Group:		Development/Languages/Perl
+
+%description bench
+Berchmark comparing Tie::Cache and Tie::Cache::LRU Perl modules.
+
+%description bench -l pl
+Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU.
+
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
@@ -101,5 +112,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES README
 %{perl_sitelib}/Tie/Cache.pm
-%attr(755,root,root) %{perl_sitelib}/Tie/bench.pl
 %{_mandir}/man3/*
+
+%files bench
+%defattr(644,root,root,755)
+%attr(755,root,root) %{perl_sitelib}/Tie/bench.pl
