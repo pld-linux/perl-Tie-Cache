@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Tie
-%define		pnam	Cache
+%define	pdir	Tie
+%define	pnam	Cache
 Summary:	Tie::Cache - LRU Cache in Memory
 Summary(pl):	Tie::Cache - cache typu LRU w pamiêci
 Name:		perl-Tie-Cache
