@@ -5,13 +5,13 @@ Summary:	Tie::Cache - LRU Cache in Memory
 Summary(pl):	Tie::Cache - cache typu LRU w pamiêci
 Name:		perl-Tie-Cache
 Version:	0.17
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,7 +45,8 @@ Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU.
 %patch -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -59,9 +60,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES README
-%{perl_sitelib}/Tie/Cache.pm
+%{perl_vendorlib}/Tie/Cache.pm
 %{_mandir}/man3/*
 
 %files bench
 %defattr(644,root,root,755)
-%attr(755,root,root) %{perl_sitelib}/Tie/bench.pl
+%attr(755,root,root) %{perl_vendorlib}/Tie/bench.pl
