@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	Cache
-Summary:	Tie-Cache perl module
-Summary(pl):	Modu³ perla Tie-Cache
+Summary:	Tie::Cache perl module
+Summary(pl):	Modu³ perla Tie::Cache
 Name:		perl-Tie-Cache
 Version:	0.15
 Release:	5
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tie-Cache perl module.
+Tie::Cache perl module.
 
 %description -l pl
-Modu³ perla Tie-Cache.
+Modu³ perla Tie::Cache.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
