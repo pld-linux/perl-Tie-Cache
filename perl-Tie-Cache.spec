@@ -2,9 +2,10 @@
 %define		pdir	Tie
 %define		pnam	Cache
 Summary:	Tie::Cache - LRU Cache in Memory
+Summary(pl):	Tie::Cache - cache typu LRU w pamiêci
 Name:		perl-Tie-Cache
 Version:	0.17
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -15,11 +16,18 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module implements a least recently used (LRU) cache in memory through
-a tie interface. Any time data is stored in the tied hash, that key/value
-pair has an entry time associated with it, and as the cache fills up,
-those members of the cache that are the oldest are removed to make room
-for new entries.
+This module implements a least recently used (LRU) cache in memory
+through a tie interface. Any time data is stored in the tied hash,
+that key/value pair has an entry time associated with it, and as the
+cache fills up, those members of the cache that are the oldest are
+removed to make room for new entries.
+
+%description -l pl
+Ten modu³ jest implementacj± cache typu LRU (ostatnio u¿ywane) w
+pamiêci poprzez powi±zany interfejs. Wszytkie dane dotycz±ce czasu s±
+zapisywane w powi±zanym haszu, którego para klucz/warto¶æ ma
+przydzielony wpis dotycz±cy czasu. Kiedy cache siê zape³nia, te
+najstarsze elementy s± usuwane, aby zrobiæ miejsce nowym.
 
 %package bench
 Summary:	Berchmark comparing Tie::Cache and Tie::Cache::LRU Perl modules
