@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	Cache
-%include	/usr/lib/rpm/macros.perl
 Summary:	Tie-Cache perl module
 Summary(pl):	Modu³ perla Tie-Cache
 Name:		perl-Tie-Cache
 Version:	0.15
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Tie-Cache perl module.
 Modu³ perla Tie-Cache.
 
 %prep
-%setup -q -n Tie-Cache-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
 
 %build
