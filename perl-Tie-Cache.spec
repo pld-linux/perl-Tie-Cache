@@ -21,6 +21,17 @@ pair has an entry time associated with it, and as the cache fills up,
 those members of the cache that are the oldest are removed to make room
 for new entries.
 
+%package bench
+Summary:	Berchmark comparing Tie::Cache and Tie::Cache::LRU Perl modules
+Summary(pl):	Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU
+Group:		Development/Languages/Perl
+
+%description bench
+Berchmark comparing Tie::Cache and Tie::Cache::LRU Perl modules.
+
+%description bench -l pl
+Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU.
+
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
