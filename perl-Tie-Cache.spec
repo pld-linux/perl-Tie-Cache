@@ -30,7 +30,7 @@ removed to make room for new entries.
 
 %description -l pl
 Ten modu³ jest implementacj± cache typu LRU (ostatnio u¿ywane) w
-pamiêci poprzez powi±zany interfejs. Wszytkie dane dotycz±ce czasu s±
+pamiêci poprzez powi±zany interfejs. Wszystkie dane dotycz±ce czasu s±
 zapisywane w powi±zanym haszu, którego para klucz/warto¶æ ma
 przydzielony wpis dotycz±cy czasu. Kiedy cache siê zape³nia, te
 najstarsze elementy s± usuwane, aby zrobiæ miejsce nowym.
