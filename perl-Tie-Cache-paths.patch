@@ -1,0 +1,16 @@
+--- Tie-Cache-0.06/Cache.pm~	Fri Feb 19 18:00:19 1999
++++ Tie-Cache-0.06/Cache.pm	Wed May 12 00:11:50 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ =pod
+ 
+--- Tie-Cache-0.06/test.pl~	Fri Feb 19 18:00:19 1999
++++ Tie-Cache-0.06/test.pl	Wed May 12 00:11:50 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl
++#!/usr/bin/perl
+ 
+ use Cache;
+ 
