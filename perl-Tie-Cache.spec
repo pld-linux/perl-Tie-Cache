@@ -2,8 +2,8 @@
 Summary:	Tie-Cache perl module
 Summary(pl):	Modu³ perla Tie-Cache
 Name:		perl-Tie-Cache
-Version:	0.08
-Release:	2
+Version:	0.10
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
