@@ -47,7 +47,7 @@ Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
