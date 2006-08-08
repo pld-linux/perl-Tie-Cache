@@ -48,7 +48,7 @@ Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -p1
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
