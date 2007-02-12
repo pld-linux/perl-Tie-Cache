@@ -6,7 +6,7 @@
 %define		pdir	Tie
 %define		pnam	Cache
 Summary:	Tie::Cache - LRU Cache in Memory
-Summary(pl):	Tie::Cache - cache typu LRU w pamiêci
+Summary(pl.UTF-8):   Tie::Cache - cache typu LRU w pamiÄ™ci
 Name:		perl-Tie-Cache
 Version:	0.17
 Release:	6
@@ -28,23 +28,23 @@ that key/value pair has an entry time associated with it, and as the
 cache fills up, those members of the cache that are the oldest are
 removed to make room for new entries.
 
-%description -l pl
-Ten modu³ jest implementacj± cache typu LRU (ostatnio u¿ywane) w
-pamiêci poprzez powi±zany interfejs. Wszystkie dane dotycz±ce czasu s±
-zapisywane w powi±zanym haszu, którego para klucz/warto¶æ ma
-przydzielony wpis dotycz±cy czasu. Kiedy cache siê zape³nia, te
-najstarsze elementy s± usuwane, aby zrobiæ miejsce nowym.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest implementacjÄ… cache typu LRU (ostatnio uÅ¼ywane) w
+pamiÄ™ci poprzez powiÄ…zany interfejs. Wszystkie dane dotyczÄ…ce czasu sÄ…
+zapisywane w powiÄ…zanym haszu, ktÃ³rego para klucz/wartoÅ›Ä‡ ma
+przydzielony wpis dotyczÄ…cy czasu. Kiedy cache siÄ™ zapeÅ‚nia, te
+najstarsze elementy sÄ… usuwane, aby zrobiÄ‡ miejsce nowym.
 
 %package bench
 Summary:	Berchmark comparing Tie::Cache and Tie::Cache::LRU Perl modules
-Summary(pl):	Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU
+Summary(pl.UTF-8):   PorÃ³wnanie wydajnoÅ›ci moduÅ‚Ã³w Perla Tie::Cache i Tie::Cache::LRU
 Group:		Development/Languages/Perl
 
 %description bench
 Berchmark comparing Tie::Cache and Tie::Cache::LRU Perl modules.
 
-%description bench -l pl
-Porównanie wydajno¶ci modu³ów Perla Tie::Cache i Tie::Cache::LRU.
+%description bench -l pl.UTF-8
+PorÃ³wnanie wydajnoÅ›ci moduÅ‚Ã³w Perla Tie::Cache i Tie::Cache::LRU.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
