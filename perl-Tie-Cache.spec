@@ -6,7 +6,7 @@
 %define		pdir	Tie
 %define		pnam	Cache
 Summary:	Tie::Cache - LRU Cache in Memory
-Summary(pl.UTF-8):   Tie::Cache - cache typu LRU w pamięci
+Summary(pl.UTF-8):	Tie::Cache - cache typu LRU w pamięci
 Name:		perl-Tie-Cache
 Version:	0.17
 Release:	6
@@ -37,7 +37,7 @@ najstarsze elementy są usuwane, aby zrobić miejsce nowym.
 
 %package bench
 Summary:	Berchmark comparing Tie::Cache and Tie::Cache::LRU Perl modules
-Summary(pl.UTF-8):   Porównanie wydajności modułów Perla Tie::Cache i Tie::Cache::LRU
+Summary(pl.UTF-8):	Porównanie wydajności modułów Perla Tie::Cache i Tie::Cache::LRU
 Group:		Development/Languages/Perl
 
 %description bench
