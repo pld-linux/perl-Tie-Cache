@@ -9,7 +9,7 @@ Summary:	Tie::Cache - LRU Cache in Memory
 Summary(pl.UTF-8):	Tie::Cache - cache typu LRU w pamięci
 Name:		perl-Tie-Cache
 Version:	0.17
-Release:	6
+Release:	7
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
